@@ -1,0 +1,38 @@
+<section
+  class="container-fluid m-0 px-4 py-3 shadow d-flex justify-content-between"
+>
+  <img [src]="logo" class="w-10" />
+  <section class="d-flex align-items-center">
+    <a
+      href="#"
+      class="m-3 text-decoration-none font-italic hover-border"
+      routerLink="/home"
+      >HOME</a
+    >
+    <a
+      href="#"
+      class="m-3 text-decoration-none font-italic hover-border"
+      routerLink="/features"
+      >FEATURES</a
+    >
+    <a href="#" class="m-3 text-decoration-none font-italic hover-border"
+      routerLink="/quotations"
+      >QUOTATIONS</a
+    >
+    <a href="#" class="m-3 text-decoration-none font-italic hover-border"
+      routerLink="/footer"
+
+      >ABOUT US</a
+    >
+  </section>
+  <section class="d-flex align-items-center me-5">
+    <button class="px-4 py-2 btn btn-outline-primary me-4">LOGIN</button>
+    <button class="px-4 py-2 btn btn-primary">SIGN UP</button>
+  </section>
+</section>
+<section
+  class="container-fluid m-0"
+  [@slideInAnimation]="o.isActivated ? o.activatedRoute : ''">
+  <router-outlet #o="outlet"></router-outlet>
+</section>
+

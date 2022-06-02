@@ -1,0 +1,19 @@
+<section class="container w-100 p-5">
+  <div class="d-flex justify-content-between bg-image p-5 rounded">
+    <div class="w-50 d-flex flex-column justify-content-center">
+      <div class="text-large mb-4 text-light">Let's Make Learning Fun</div>
+      <div class="text-light">
+        A platform where we offer a space for quality education. We help
+        educator locate an institution, and learner find an educator, for smooth
+        yet effective learning.
+      </div>
+    </div>
+    <div class="w-50">
+      <img [src]="readingIcon" />
+    </div>
+  </div>
+  <div class="d-flex justify-content-between px-5 my-5">
+    <span class="material-icons text-medium cursor-pointer next-hover" routerLink="/footer">keyboard_double_arrow_left</span>
+    <span class="material-icons text-medium cursor-pointer next-hover" (click)="goToFeaturesModule()">keyboard_double_arrow_right</span>
+  </div>
+</section>
